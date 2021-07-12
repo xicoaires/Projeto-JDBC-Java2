@@ -9,8 +9,6 @@ import java.util.List;
 
 import JDBCUtil.ConexaoJDBC;
 import Model.Cliente;
-import Model.Contato;
-import Model.Endereco;
 
 public class ClienteDao {
 
@@ -77,7 +75,6 @@ public class ClienteDao {
 		}
 	}
 
-//	 inner join contato on cliente.id_cliente = contato.id_cliente inner join endereco on cliente.id_cliente = endereco.id_cliente//		LISTAR TODOS OS OBJETOS DA TABELA
 	public List<Cliente> listarTodos() throws ClassNotFoundException {
 		Connection conexao;
 		String sql = "select * from cliente order by ID_CLIENTE";

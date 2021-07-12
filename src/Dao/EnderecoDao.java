@@ -8,8 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import JDBCUtil.ConexaoJDBC;
-import Model.Cliente;
-import Model.Contato;
 import Model.Endereco;
 
 public class EnderecoDao {
@@ -65,23 +63,6 @@ public class EnderecoDao {
 			e.printStackTrace();
 		}
 	}
-
-////		DELETAR OBJETO DA TABELA
-//		public void deletar(Long id) throws ClassNotFoundException {
-//			Connection conexao;
-//			String sql = "DELETE FROM ENDERECO WHERE ID_CONTATO=?";
-//			
-//			try {
-//				conexao = ConexaoJDBC.getConexao();
-//				PreparedStatement ps = conexao.prepareStatement(sql);
-//				
-//				ps.setLong(1, id);
-//				ps.execute();
-//				
-//			} catch (SQLException e) {
-//				e.printStackTrace();
-//			}
-//		}
 
 //		LISTAR TODOS OS OBJETOS DA TABELA
 	public List<Endereco> listarTodos() throws ClassNotFoundException {

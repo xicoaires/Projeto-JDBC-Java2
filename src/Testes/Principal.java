@@ -14,51 +14,6 @@ public class Principal {
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 
-//CRIAR UM OBJETO DA TABELA
-//		Cliente cliente = new Cliente();
-//		cliente.setNome("Valéria");
-//		cliente.setCpf("01478523695");
-//		cliente.setGenero("F");
-//		cliente.setAnoNasc("1980");
-//		
-//		ClienteDao clienteDao = new ClienteDao();
-//		clienteDao.salvar(cliente);
-//		
-
-//DELETAR UM OBJETO DA TABELA
-//		Cliente cliente = new Cliente();
-//		cliente.setId(2L);
-//		
-//		ClienteDao clienteDao = new ClienteDao();
-//		clienteDao.deletar(cliente.getId());
-
-//ATUALIZAR UM OBJETO DA TABELA
-//		Cliente cliente = new Cliente();
-//		
-//		cliente.setId(44L);
-//		cliente.setNome("Mary");
-//		cliente.setCpf("1211121");
-//		cliente.setAnoNasc("03061988");
-//		cliente.setSexo("m");
-//	
-//		ClienteDao clienteDao = new ClienteDao();
-//		ClienteDao.atualizar(cliente);
-
-//LISTAR TODOS DE UMA TABELA
-//		ClienteDao clienteDao = new ClienteDao();
-//		System.out.println(clienteDao.listarTodos());
-//
-//		Cliente cliente = new Cliente();
-//		cliente.setId(2L);
-//		
-//		Contato contato = new Contato();
-//		contato.setCliente(cliente);
-//		contato.setEmail("valeria@email.com");
-//		contato.setDdd("81");
-//		contato.setTelefone("999999999");
-//		
-//		ContatoDao contatoDao = new ContatoDao();
-//		contatoDao.salvar(contato);
 		Scanner ler = new Scanner(System.in);
 		int opcao = 10;
 		String dado;
@@ -182,7 +137,7 @@ public class Principal {
 				Contato contato2 = new Contato();
 				Endereco endereco2 = new Endereco();
 
-				System.out.print("Digite o ID do cliente: ");
+				System.out.print("ID do cliente: ");
 				dadoLong = ler.nextLong();
 				cliente2.setId(dadoLong);
 				contato2.setIdCliente(dadoLong);
@@ -258,7 +213,7 @@ public class Principal {
 			case 5:
 				System.out.println("APAGAR UM CLIENTE");
 				Cliente cliente5 = new Cliente();
-				System.out.print("ID: ");
+				System.out.print("ID do cliente: ");
 				dadoLong = ler.nextLong();
 				cliente5.setId(dadoLong);
 				
