@@ -19,7 +19,8 @@ public class Principal {
 		String dado;
 		Long dadoLong;
 
-		System.out.println("Bem vindo ao Banco de Dados do Projeto Java Módulo 2 da Fuctura!\n");
+		System.out.println("Bem vindo ao Projeto de Banco de Dados de Java 2 - JDBC!\n");
+		System.out.println("CADASTRO DE CLIENTE\n");
 		
 		do {
 
@@ -227,8 +228,8 @@ public class Principal {
 				break;
 				
 			case 6:
-				System.out.println("MENU LOCALIZAR CLIENTE");
-				
+				System.out.println("LOCALIZAR CLIENTE POR ID");
+				System.out.print("Digite o ID do cliente: ");
 				System.out.println("Pressione alguma tecla para continuar...");
 				ler.nextLine();
 				ler.nextLine();
@@ -237,12 +238,7 @@ public class Principal {
 			case 7:
 				System.out.println("LISTAR TODOS OS CLIENTES");
 				ClienteDao clienteDao7 = new ClienteDao();
-				ContatoDao contatoDao7 = new ContatoDao();
-				EnderecoDao enderecoDao7 = new EnderecoDao();
 				System.out.println(clienteDao7.listarTodos());
-				System.out.println(contatoDao7.listarTodos());
-				System.out.println(enderecoDao7.listarTodos());
-				
 				System.out.println("Pressione alguma tecla para continuar...");
 				ler.nextLine();
 				ler.nextLine();

@@ -38,11 +38,9 @@ public class Contato {
 		this.telefone = telefone;
 	}
 	@Override
-	public String toString() {
-		return "Cliente ID: " + idCliente
-				 + "\nE-mail: " + email
-				 + "\nDDD: " + ddd
-				 + "\nTelefone: " + telefone;
+		public String toString() {
+			return "Email: " + email
+					+ "\nTelefone: (" + ddd +") " + telefone;
 	}
 	
 }

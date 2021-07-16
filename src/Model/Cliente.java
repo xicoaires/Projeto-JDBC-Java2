@@ -40,11 +40,13 @@ public class Cliente {
 	}
 	@Override
 	public String toString() {
-		return "Cliente ID: " + id
-			 + "\nNome: " + nome
-			 + "\nCPF nº: " + cpf
-			 + "\nGênero: " + genero
-			 + "\nAno Nascimento: " + anoNasc+"\n";
+		return "ID nº: " + id
+				+ "\nNome: " + nome
+				+ "\nCPF nº: " + cpf
+				+ "\nGênero: " + genero
+				+ "\nAno de Nascimento: " + anoNasc
+				+ "\n_______________________________\n";
+
 	}
 	
 	

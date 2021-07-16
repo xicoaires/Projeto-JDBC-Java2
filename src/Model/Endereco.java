@@ -59,16 +59,11 @@ public class Endereco {
 	public void setEstado(String estado) {
 		this.estado = estado;
 	}
-	@Override
-	public String toString() {
-		
-		return "Cliente ID: " + idCliente
-				 + "\nCEP nº: " + cep
-				 + "\nRua: " + rua + ", " + numero
-				 + "\nBairro: " + bairro
-				 + "\nCidade: " + cidade
-				 + "\nEstado: " + estado
-					+ "\n********************\n";
+	@Override		
+		public String toString() {
+			return "Endereço: " + rua + ", " + numero
+					+ "\n" + bairro + " - " + cidade + " - " + estado
+					+ "\nCEP " + cep + "\n";
 	}
 	
 }

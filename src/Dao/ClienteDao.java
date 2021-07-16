@@ -6,7 +6,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
 import JDBCUtil.ConexaoJDBC;
 import Model.Cliente;
 
@@ -94,13 +93,13 @@ public class ClienteDao {
 				cliente.setCpf(resultado.getString("CPF"));
 				cliente.setGenero(resultado.getString("GENERO"));
 				cliente.setAnoNasc(resultado.getString("ANO_NASC"));
-
 				listarClientes.add(cliente);
-
+				
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return listarClientes;
 	}
+	
 }
